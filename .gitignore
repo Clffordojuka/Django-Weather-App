@@ -1,0 +1,13 @@
+# Python-related files
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Django secret keys
+.env

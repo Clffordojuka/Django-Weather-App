@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Softer background color */
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px; /* Increased padding for better usability */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Fixed width for inputs */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px; /* Increased padding for better usability */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.forecast {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    padding: 15px; /* Increased padding for better spacing */
+    margin: 10px;
+    width: calc(100% / 5 - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s; /* Smooth transformation on hover */
+}
+
+.forecast:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.forecast img {
+    max-width: 100%; /* Responsive images */
+}
+
+@media (max-width: 767px) {
+    .forecast {
+        width: calc(50% - 20px);
+        margin-bottom: 20px; /* Added bottom margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .forecast {
+        width: calc(100% - 20px);
+        margin-bottom: 20px; /* Added bottom margin for spacing */
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px); /* Full width on small screens */
+        margin-bottom: 10px; /* Space between input fields and button */
+    }
+}
